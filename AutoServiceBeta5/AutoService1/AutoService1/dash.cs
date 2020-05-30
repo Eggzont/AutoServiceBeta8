@@ -73,7 +73,8 @@ namespace AutoService1
             }
             else
             {
-                CalendarEvents.Text = "No Upcoming Events";
+                CalendarEvents.Text = "Nuk ka ngjarje";
+                label5.Text = "Data";
             }
 
         }
