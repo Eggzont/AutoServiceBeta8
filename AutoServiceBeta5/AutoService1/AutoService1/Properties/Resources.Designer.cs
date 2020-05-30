@@ -63,10 +63,30 @@ namespace AutoService1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _618e5b270ddb606dae6fa57689bfe3cd_car_mechanic_service_logo_by_vexels {
+            get {
+                object obj = ResourceManager.GetObject("618e5b270ddb606dae6fa57689bfe3cd-car-mechanic-service-logo-by-vexels", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap car_automobile_repair_shop_auto_mechanic_motor_vehicle_service_png_favpng_2PCr4eR7GKunQT4vH5fX20jMr {
             get {
                 object obj = ResourceManager.GetObject("car-automobile-repair-shop-auto-mechanic-motor-vehicle-service-png-favpng-2PCr4eR" +
                         "7GKunQT4vH5fX20jMr", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Graph_PNG_Transparent_Image {
+            get {
+                object obj = ResourceManager.GetObject("Graph-PNG-Transparent-Image", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -99,6 +119,26 @@ namespace AutoService1.Properties {
         internal static System.Drawing.Bitmap Logo {
             get {
                 object obj = ResourceManager.GetObject("Logo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pngkit_stock_png_2292685 {
+            get {
+                object obj = ResourceManager.GetObject("pngkit_stock-png_2292685", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap unnamed {
+            get {
+                object obj = ResourceManager.GetObject("unnamed", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

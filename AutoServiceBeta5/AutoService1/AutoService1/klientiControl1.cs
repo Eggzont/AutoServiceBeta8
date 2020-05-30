@@ -118,8 +118,8 @@ namespace AutoService1
             using (MySqlConnection mysqlCon = new MySqlConnection(connectionString))
             {
                 mysqlCon.Open();
-                MySqlDataAdapter sqlDa = new MySqlDataAdapter("CarsViewAll", mysqlCon);
-                sqlDa.SelectCommand.CommandType = CommandType.StoredProcedure;
+                MySqlDataAdapter sqlDa = new MySqlDataAdapter("SELECT * FROM cars", mysqlCon);
+                //sqlDa.SelectCommand.CommandType = CommandType.StoredProcedure;
                 DataTable dtblCars = new DataTable();
                 sqlDa.Fill(dtblCars);
                 datagrid.DataSource = dtblCars;
@@ -158,18 +158,36 @@ namespace AutoService1
             }
         }
 
-        private void SearchBtn_Click(object sender, EventArgs e)
+        /* private void SearchBtn_Click(object sender, EventArgs e)
         {
             using (MySqlConnection mysqlCon = new MySqlConnection(connectionString))
             {
                 mysqlCon.Open();
-                MySqlDataAdapter sqlDa = new MySqlDataAdapter("CarsSearchByValue", mysqlCon);
-                sqlDa.SelectCommand.CommandType = CommandType.StoredProcedure;
-                sqlDa.SelectCommand.Parameters.AddWithValue("_SearchValue", txtSearch.Text);
+                MySqlDataAdapter sqlDa = new MySqlDataAdapter("SELECT * FROM cars WHERE Klienti LIKE'" + txtSearch.Text + "%'", mysqlCon);
                 DataTable dtblCars = new DataTable();
                 sqlDa.Fill(dtblCars);
                 datagrid.DataSource = dtblCars;
                 datagrid.Columns[0].Visible = false;
+                mysqlCon.Close();
+                
+
+
+            }
+        }
+        */
+
+        private void txtSearch_TextChanged(object sender, EventArgs e)
+        {
+            using (MySqlConnection mysqlCon = new MySqlConnection(connectionString))
+            {
+                mysqlCon.Open();
+                MySqlDataAdapter sqlDa = new MySqlDataAdapter("SELECT * FROM cars WHERE Klienti LIKE'" + txtSearch.Text + "%'", mysqlCon);
+                DataTable dtblCars = new DataTable();
+                sqlDa.Fill(dtblCars);
+                datagrid.DataSource = dtblCars;
+                datagrid.Columns[0].Visible = false;
+                mysqlCon.Close();
+
 
 
             }

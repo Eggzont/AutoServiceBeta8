@@ -38,10 +38,11 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.coLabel = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.historikuControl1 = new AutoService1.HistorikuControl();
             this.panel3 = new System.Windows.Forms.Panel();
             this.button6 = new System.Windows.Forms.Button();
             this.btnPerdoruesi = new System.Windows.Forms.Button();
+            this.dash1 = new AutoService1.dash();
+            this.historikuControl1 = new AutoService1.HistorikuControl();
             this.libriControl1 = new AutoService1.libriControl();
             this.klientiControl11 = new AutoService1.klientiControl1();
             this.opsionetControl11 = new AutoService1.OpsionetControl1();
@@ -62,18 +63,18 @@
             this.panel1.Controls.Add(this.button1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1467, 64);
+            this.panel1.Size = new System.Drawing.Size(1100, 52);
             this.panel1.TabIndex = 0;
             // 
             // slidePanel
             // 
             this.slidePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(76)))), ((int)(((byte)(60)))));
-            this.slidePanel.Location = new System.Drawing.Point(3, 0);
-            this.slidePanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.slidePanel.Location = new System.Drawing.Point(2, 0);
+            this.slidePanel.Margin = new System.Windows.Forms.Padding(2);
             this.slidePanel.Name = "slidePanel";
-            this.slidePanel.Size = new System.Drawing.Size(173, 14);
+            this.slidePanel.Size = new System.Drawing.Size(130, 11);
             this.slidePanel.TabIndex = 0;
             // 
             // button5
@@ -81,10 +82,10 @@
             this.button5.FlatAppearance.BorderSize = 0;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(723, 12);
-            this.button5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button5.Location = new System.Drawing.Point(542, 10);
+            this.button5.Margin = new System.Windows.Forms.Padding(2);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(173, 52);
+            this.button5.Size = new System.Drawing.Size(130, 42);
             this.button5.TabIndex = 0;
             this.button5.Text = "Opsionet";
             this.button5.UseVisualStyleBackColor = true;
@@ -95,10 +96,10 @@
             this.button4.FlatAppearance.BorderSize = 0;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(543, 12);
-            this.button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button4.Location = new System.Drawing.Point(407, 10);
+            this.button4.Margin = new System.Windows.Forms.Padding(2);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(173, 52);
+            this.button4.Size = new System.Drawing.Size(130, 42);
             this.button4.TabIndex = 0;
             this.button4.Text = "Historiku";
             this.button4.UseVisualStyleBackColor = true;
@@ -109,10 +110,10 @@
             this.button3.FlatAppearance.BorderSize = 0;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(363, 12);
-            this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button3.Location = new System.Drawing.Point(272, 10);
+            this.button3.Margin = new System.Windows.Forms.Padding(2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(173, 52);
+            this.button3.Size = new System.Drawing.Size(130, 42);
             this.button3.TabIndex = 0;
             this.button3.Text = "Servisi";
             this.button3.UseVisualStyleBackColor = true;
@@ -123,10 +124,10 @@
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(183, 12);
-            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button2.Location = new System.Drawing.Point(137, 10);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(173, 52);
+            this.button2.Size = new System.Drawing.Size(130, 42);
             this.button2.TabIndex = 0;
             this.button2.Text = "Klientat";
             this.button2.UseVisualStyleBackColor = true;
@@ -138,10 +139,10 @@
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(0, 12);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button1.Location = new System.Drawing.Point(0, 10);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(173, 52);
+            this.button1.Size = new System.Drawing.Size(130, 42);
             this.button1.TabIndex = 0;
             this.button1.Text = "Main";
             this.button1.UseVisualStyleBackColor = true;
@@ -153,40 +154,37 @@
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
             this.panel2.Controls.Add(this.coLabel);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 747);
-            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel2.Location = new System.Drawing.Point(0, 607);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1467, 42);
+            this.panel2.Size = new System.Drawing.Size(1100, 34);
             this.panel2.TabIndex = 1;
             // 
             // coLabel
             // 
             this.coLabel.AutoSize = true;
-            this.coLabel.Location = new System.Drawing.Point(1242, 10);
+            this.coLabel.Location = new System.Drawing.Point(932, 8);
+            this.coLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.coLabel.Name = "coLabel";
-            this.coLabel.Size = new System.Drawing.Size(174, 17);
+            this.coLabel.Size = new System.Drawing.Size(131, 13);
             this.coLabel.TabIndex = 0;
             this.coLabel.Text = "Software by Egzont Demiri";
             // 
             // panel4
             // 
+            this.panel4.Controls.Add(this.dash1);
             this.panel4.Controls.Add(this.historikuControl1);
             this.panel4.Controls.Add(this.panel3);
+            this.panel4.Controls.Add(this.opsionetControl11);
             this.panel4.Controls.Add(this.libriControl1);
             this.panel4.Controls.Add(this.klientiControl11);
-            this.panel4.Controls.Add(this.opsionetControl11);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(0, 64);
+            this.panel4.Location = new System.Drawing.Point(0, 52);
+            this.panel4.Margin = new System.Windows.Forms.Padding(2);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1467, 683);
+            this.panel4.Size = new System.Drawing.Size(1100, 555);
             this.panel4.TabIndex = 5;
-            // 
-            // historikuControl1
-            // 
-            this.historikuControl1.Location = new System.Drawing.Point(225, 49);
-            this.historikuControl1.Name = "historikuControl1";
-            this.historikuControl1.Size = new System.Drawing.Size(963, 535);
-            this.historikuControl1.TabIndex = 9;
+            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
             // panel3
             // 
@@ -194,9 +192,9 @@
             this.panel3.Controls.Add(this.button6);
             this.panel3.Controls.Add(this.btnPerdoruesi);
             this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(176, 146);
+            this.panel3.Size = new System.Drawing.Size(132, 119);
             this.panel3.TabIndex = 5;
             this.panel3.Visible = false;
             this.panel3.MouseEnter += new System.EventHandler(this.panel3_MouseEnter_1);
@@ -207,10 +205,10 @@
             this.button6.FlatAppearance.BorderSize = 0;
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(0, 49);
-            this.button6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button6.Location = new System.Drawing.Point(0, 40);
+            this.button6.Margin = new System.Windows.Forms.Padding(2);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(173, 52);
+            this.button6.Size = new System.Drawing.Size(130, 42);
             this.button6.TabIndex = 0;
             this.button6.Text = "Opsionet";
             this.button6.UseVisualStyleBackColor = true;
@@ -222,44 +220,62 @@
             this.btnPerdoruesi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPerdoruesi.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPerdoruesi.Location = new System.Drawing.Point(0, 0);
-            this.btnPerdoruesi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnPerdoruesi.Margin = new System.Windows.Forms.Padding(2);
             this.btnPerdoruesi.Name = "btnPerdoruesi";
-            this.btnPerdoruesi.Size = new System.Drawing.Size(173, 52);
+            this.btnPerdoruesi.Size = new System.Drawing.Size(130, 42);
             this.btnPerdoruesi.TabIndex = 0;
-            this.btnPerdoruesi.Text = "Perdoruesi";
+            this.btnPerdoruesi.Text = "Backup";
             this.btnPerdoruesi.UseVisualStyleBackColor = true;
+            // 
+            // dash1
+            // 
+            this.dash1.Location = new System.Drawing.Point(137, 76);
+            this.dash1.Name = "dash1";
+            this.dash1.Size = new System.Drawing.Size(718, 390);
+            this.dash1.TabIndex = 10;
+            // 
+            // historikuControl1
+            // 
+            this.historikuControl1.Location = new System.Drawing.Point(169, 40);
+            this.historikuControl1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.historikuControl1.Name = "historikuControl1";
+            this.historikuControl1.Size = new System.Drawing.Size(722, 435);
+            this.historikuControl1.TabIndex = 9;
             // 
             // libriControl1
             // 
-            this.libriControl1.Location = new System.Drawing.Point(51, 5);
+            this.libriControl1.Location = new System.Drawing.Point(38, 4);
+            this.libriControl1.Margin = new System.Windows.Forms.Padding(2);
             this.libriControl1.Name = "libriControl1";
-            this.libriControl1.Size = new System.Drawing.Size(1365, 673);
+            this.libriControl1.Size = new System.Drawing.Size(1024, 547);
             this.libriControl1.TabIndex = 8;
             // 
             // klientiControl11
             // 
-            this.klientiControl11.Location = new System.Drawing.Point(51, 29);
+            this.klientiControl11.Location = new System.Drawing.Point(38, 24);
+            this.klientiControl11.Margin = new System.Windows.Forms.Padding(2);
             this.klientiControl11.Name = "klientiControl11";
-            this.klientiControl11.Size = new System.Drawing.Size(1365, 607);
+            this.klientiControl11.Size = new System.Drawing.Size(1024, 493);
             this.klientiControl11.TabIndex = 6;
             // 
             // opsionetControl11
             // 
-            this.opsionetControl11.Location = new System.Drawing.Point(183, 49);
+            this.opsionetControl11.Location = new System.Drawing.Point(137, 40);
+            this.opsionetControl11.Margin = new System.Windows.Forms.Padding(2);
             this.opsionetControl11.Name = "opsionetControl11";
-            this.opsionetControl11.Size = new System.Drawing.Size(768, 501);
+            this.opsionetControl11.Size = new System.Drawing.Size(576, 407);
             this.opsionetControl11.TabIndex = 7;
             // 
             // Form3
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1467, 789);
+            this.ClientSize = new System.Drawing.Size(1100, 641);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.Name = "Form3";
             this.ShowIcon = false;
@@ -294,5 +310,6 @@
         private OpsionetControl1 opsionetControl11;
         private libriControl libriControl1;
         private HistorikuControl historikuControl1;
+        private dash dash1;
     }
 }

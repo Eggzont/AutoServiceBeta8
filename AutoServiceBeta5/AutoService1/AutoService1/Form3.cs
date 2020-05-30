@@ -35,6 +35,8 @@ namespace AutoService1
             klientiControl11.Hide();
             opsionetControl11.Hide();
             historikuControl1.Hide();
+            libriControl1.Hide();
+            dash1.Show();
 
 
 
@@ -47,6 +49,7 @@ namespace AutoService1
             opsionetControl11.Hide();
             libriControl1.Hide();
             historikuControl1.Hide();
+            dash1.Hide();
 
 
 
@@ -62,6 +65,7 @@ namespace AutoService1
             opsionetControl11.Hide();
             libriControl1.Show();
             historikuControl1.Hide();
+            dash1.Hide();
 
 
         }
@@ -73,6 +77,7 @@ namespace AutoService1
             opsionetControl11.Hide();
             libriControl1.Hide();
             historikuControl1.Show();
+            dash1.Hide();
 
 
         }
@@ -84,6 +89,7 @@ namespace AutoService1
             klientiControl11.Hide();
             libriControl1.Hide();
             historikuControl1.Hide();
+            dash1.Hide();
         }
 
         private void Form3_Load(object sender, EventArgs e)
@@ -92,7 +98,8 @@ namespace AutoService1
             klientiControl11.Hide();
             opsionetControl11.Hide();
             libriControl1.Hide();
-            historikuControl1.Hide();  
+            historikuControl1.Hide();
+            dash1.Show();
 
 
         }
@@ -138,6 +145,11 @@ namespace AutoService1
         private void button6_Click(object sender, EventArgs e)
         {
             opsionetControl11.Show();
+        }
+
+        private void panel4_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
