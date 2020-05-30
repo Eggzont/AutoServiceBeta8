@@ -142,5 +142,15 @@ namespace AutoService1.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap weather_template_app_simple_style_23_2147552560 {
+            get {
+                object obj = ResourceManager.GetObject("weather-template-app-simple-style_23-2147552560", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

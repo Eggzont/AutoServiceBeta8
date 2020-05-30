@@ -127,6 +127,9 @@
   <data name="car-automobile-repair-shop-auto-mechanic-motor-vehicle-service-png-favpng-2PCr4eR7GKunQT4vH5fX20jMr" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\car-automobile-repair-shop-auto-mechanic-motor-vehicle-service-png-favpng-2PCr4eR7GKunQT4vH5fX20jMr.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="unnamed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\unnamed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Graph-PNG-Transparent-Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Graph-PNG-Transparent-Image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -139,7 +142,7 @@
   <data name="Logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="unnamed" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\unnamed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="weather-template-app-simple-style_23-2147552560" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\weather-template-app-simple-style_23-2147552560.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

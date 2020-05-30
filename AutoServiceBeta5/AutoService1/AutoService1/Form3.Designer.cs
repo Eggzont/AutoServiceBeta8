@@ -38,14 +38,14 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.coLabel = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.dash1 = new AutoService1.dash();
+            this.historikuControl1 = new AutoService1.HistorikuControl();
             this.panel3 = new System.Windows.Forms.Panel();
             this.button6 = new System.Windows.Forms.Button();
             this.btnPerdoruesi = new System.Windows.Forms.Button();
-            this.dash1 = new AutoService1.dash();
-            this.historikuControl1 = new AutoService1.HistorikuControl();
+            this.opsionetControl11 = new AutoService1.OpsionetControl1();
             this.libriControl1 = new AutoService1.libriControl();
             this.klientiControl11 = new AutoService1.klientiControl1();
-            this.opsionetControl11 = new AutoService1.OpsionetControl1();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -186,6 +186,21 @@
             this.panel4.TabIndex = 5;
             this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
+            // dash1
+            // 
+            this.dash1.Location = new System.Drawing.Point(169, 75);
+            this.dash1.Name = "dash1";
+            this.dash1.Size = new System.Drawing.Size(718, 390);
+            this.dash1.TabIndex = 10;
+            // 
+            // historikuControl1
+            // 
+            this.historikuControl1.Location = new System.Drawing.Point(169, 40);
+            this.historikuControl1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.historikuControl1.Name = "historikuControl1";
+            this.historikuControl1.Size = new System.Drawing.Size(722, 435);
+            this.historikuControl1.TabIndex = 9;
+            // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
@@ -227,20 +242,13 @@
             this.btnPerdoruesi.Text = "Backup";
             this.btnPerdoruesi.UseVisualStyleBackColor = true;
             // 
-            // dash1
+            // opsionetControl11
             // 
-            this.dash1.Location = new System.Drawing.Point(137, 76);
-            this.dash1.Name = "dash1";
-            this.dash1.Size = new System.Drawing.Size(718, 390);
-            this.dash1.TabIndex = 10;
-            // 
-            // historikuControl1
-            // 
-            this.historikuControl1.Location = new System.Drawing.Point(169, 40);
-            this.historikuControl1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.historikuControl1.Name = "historikuControl1";
-            this.historikuControl1.Size = new System.Drawing.Size(722, 435);
-            this.historikuControl1.TabIndex = 9;
+            this.opsionetControl11.Location = new System.Drawing.Point(137, 40);
+            this.opsionetControl11.Margin = new System.Windows.Forms.Padding(2);
+            this.opsionetControl11.Name = "opsionetControl11";
+            this.opsionetControl11.Size = new System.Drawing.Size(576, 407);
+            this.opsionetControl11.TabIndex = 7;
             // 
             // libriControl1
             // 
@@ -257,14 +265,6 @@
             this.klientiControl11.Name = "klientiControl11";
             this.klientiControl11.Size = new System.Drawing.Size(1024, 493);
             this.klientiControl11.TabIndex = 6;
-            // 
-            // opsionetControl11
-            // 
-            this.opsionetControl11.Location = new System.Drawing.Point(137, 40);
-            this.opsionetControl11.Margin = new System.Windows.Forms.Padding(2);
-            this.opsionetControl11.Name = "opsionetControl11";
-            this.opsionetControl11.Size = new System.Drawing.Size(576, 407);
-            this.opsionetControl11.TabIndex = 7;
             // 
             // Form3
             // 
