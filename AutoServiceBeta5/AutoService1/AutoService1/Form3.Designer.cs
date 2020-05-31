@@ -38,11 +38,12 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.coLabel = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.dash1 = new AutoService1.dash();
-            this.historikuControl1 = new AutoService1.HistorikuControl();
             this.panel3 = new System.Windows.Forms.Panel();
             this.button6 = new System.Windows.Forms.Button();
             this.btnPerdoruesi = new System.Windows.Forms.Button();
+            this.Perdoruesi = new System.Windows.Forms.Label();
+            this.dash1 = new AutoService1.dash();
+            this.historikuControl1 = new AutoService1.HistorikuControl();
             this.opsionetControl11 = new AutoService1.OpsionetControl1();
             this.libriControl1 = new AutoService1.libriControl();
             this.klientiControl11 = new AutoService1.klientiControl1();
@@ -152,6 +153,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            this.panel2.Controls.Add(this.Perdoruesi);
             this.panel2.Controls.Add(this.coLabel);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel2.Location = new System.Drawing.Point(0, 607);
@@ -163,10 +165,12 @@
             // coLabel
             // 
             this.coLabel.AutoSize = true;
-            this.coLabel.Location = new System.Drawing.Point(932, 8);
+            this.coLabel.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.coLabel.ForeColor = System.Drawing.Color.White;
+            this.coLabel.Location = new System.Drawing.Point(883, 8);
             this.coLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.coLabel.Name = "coLabel";
-            this.coLabel.Size = new System.Drawing.Size(131, 13);
+            this.coLabel.Size = new System.Drawing.Size(206, 19);
             this.coLabel.TabIndex = 0;
             this.coLabel.Text = "Software by Egzont Demiri";
             // 
@@ -185,21 +189,6 @@
             this.panel4.Size = new System.Drawing.Size(1100, 555);
             this.panel4.TabIndex = 5;
             this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
-            // 
-            // dash1
-            // 
-            this.dash1.Location = new System.Drawing.Point(169, 75);
-            this.dash1.Name = "dash1";
-            this.dash1.Size = new System.Drawing.Size(718, 390);
-            this.dash1.TabIndex = 10;
-            // 
-            // historikuControl1
-            // 
-            this.historikuControl1.Location = new System.Drawing.Point(169, 40);
-            this.historikuControl1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.historikuControl1.Name = "historikuControl1";
-            this.historikuControl1.Size = new System.Drawing.Size(722, 435);
-            this.historikuControl1.TabIndex = 9;
             // 
             // panel3
             // 
@@ -241,6 +230,32 @@
             this.btnPerdoruesi.TabIndex = 0;
             this.btnPerdoruesi.Text = "Backup";
             this.btnPerdoruesi.UseVisualStyleBackColor = true;
+            // 
+            // Perdoruesi
+            // 
+            this.Perdoruesi.AutoSize = true;
+            this.Perdoruesi.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Perdoruesi.ForeColor = System.Drawing.Color.White;
+            this.Perdoruesi.Location = new System.Drawing.Point(13, 8);
+            this.Perdoruesi.Name = "Perdoruesi";
+            this.Perdoruesi.Size = new System.Drawing.Size(89, 19);
+            this.Perdoruesi.TabIndex = 1;
+            this.Perdoruesi.Text = "Perdoruesi";
+            // 
+            // dash1
+            // 
+            this.dash1.Location = new System.Drawing.Point(169, 75);
+            this.dash1.Name = "dash1";
+            this.dash1.Size = new System.Drawing.Size(718, 390);
+            this.dash1.TabIndex = 10;
+            // 
+            // historikuControl1
+            // 
+            this.historikuControl1.Location = new System.Drawing.Point(169, 40);
+            this.historikuControl1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.historikuControl1.Name = "historikuControl1";
+            this.historikuControl1.Size = new System.Drawing.Size(722, 435);
+            this.historikuControl1.TabIndex = 9;
             // 
             // opsionetControl11
             // 
@@ -311,5 +326,6 @@
         private libriControl libriControl1;
         private HistorikuControl historikuControl1;
         private dash dash1;
+        private System.Windows.Forms.Label Perdoruesi;
     }
 }

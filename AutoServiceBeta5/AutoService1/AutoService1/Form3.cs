@@ -13,6 +13,7 @@ namespace AutoService1
 {
     public partial class Form3 : Form
     {
+        MySqlConnection con = new MySqlConnection(@"server=localhost;Uid=root;database=autoservice;port=3306;password=qweqwe1234");
         public Form3()
         {
             InitializeComponent();
@@ -100,8 +101,32 @@ namespace AutoService1
             libriControl1.Hide();
             historikuControl1.Hide();
             dash1.Show();
+            currentUser();
 
 
+        }
+        void currentUser()
+        {
+            MySqlCommand command = con.CreateCommand();
+            command.CommandText = "Select * FROM autoservice.login";
+            MySqlDataReader myReader;
+
+            try
+            {
+                con.Open();
+                myReader = command.ExecuteReader();
+
+                while (myReader.Read())
+                {
+                    Perdoruesi.Text = myReader[1].ToString();
+
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            con.Close();
         }
 
         private void button1_MouseHover(object sender, EventArgs e)
