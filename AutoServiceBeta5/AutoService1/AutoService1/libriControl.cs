@@ -32,8 +32,7 @@ namespace AutoService1
             using (MySqlConnection mysqlCon = new MySqlConnection(connectionString))
             {
                 mysqlCon.Open();
-                MySqlDataAdapter sqlDa = new MySqlDataAdapter("CarsViewAll", mysqlCon);
-                sqlDa.SelectCommand.CommandType = CommandType.StoredProcedure;
+                MySqlDataAdapter sqlDa = new MySqlDataAdapter("SELECT * FROM cars", mysqlCon);
                 DataTable dtblCars = new DataTable();
                 sqlDa.Fill(dtblCars);
                 datagrid.DataSource = dtblCars;

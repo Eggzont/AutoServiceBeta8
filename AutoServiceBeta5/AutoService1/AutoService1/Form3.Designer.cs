@@ -36,14 +36,14 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.Perdoruesi = new System.Windows.Forms.Label();
             this.coLabel = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.dash1 = new AutoService1.dash();
+            this.historikuControl1 = new AutoService1.HistorikuControl();
             this.panel3 = new System.Windows.Forms.Panel();
             this.button6 = new System.Windows.Forms.Button();
             this.btnPerdoruesi = new System.Windows.Forms.Button();
-            this.Perdoruesi = new System.Windows.Forms.Label();
-            this.dash1 = new AutoService1.dash();
-            this.historikuControl1 = new AutoService1.HistorikuControl();
             this.opsionetControl11 = new AutoService1.OpsionetControl1();
             this.libriControl1 = new AutoService1.libriControl();
             this.klientiControl11 = new AutoService1.klientiControl1();
@@ -162,6 +162,17 @@
             this.panel2.Size = new System.Drawing.Size(1100, 34);
             this.panel2.TabIndex = 1;
             // 
+            // Perdoruesi
+            // 
+            this.Perdoruesi.AutoSize = true;
+            this.Perdoruesi.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Perdoruesi.ForeColor = System.Drawing.Color.White;
+            this.Perdoruesi.Location = new System.Drawing.Point(13, 8);
+            this.Perdoruesi.Name = "Perdoruesi";
+            this.Perdoruesi.Size = new System.Drawing.Size(89, 19);
+            this.Perdoruesi.TabIndex = 1;
+            this.Perdoruesi.Text = "Perdoruesi";
+            // 
             // coLabel
             // 
             this.coLabel.AutoSize = true;
@@ -190,6 +201,21 @@
             this.panel4.TabIndex = 5;
             this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
+            // dash1
+            // 
+            this.dash1.Location = new System.Drawing.Point(169, 75);
+            this.dash1.Name = "dash1";
+            this.dash1.Size = new System.Drawing.Size(718, 390);
+            this.dash1.TabIndex = 10;
+            // 
+            // historikuControl1
+            // 
+            this.historikuControl1.Location = new System.Drawing.Point(169, 40);
+            this.historikuControl1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.historikuControl1.Name = "historikuControl1";
+            this.historikuControl1.Size = new System.Drawing.Size(722, 435);
+            this.historikuControl1.TabIndex = 9;
+            // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
@@ -214,7 +240,7 @@
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(130, 42);
             this.button6.TabIndex = 0;
-            this.button6.Text = "Opsionet";
+            this.button6.Text = "Konfigurime";
             this.button6.UseVisualStyleBackColor = true;
             this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
@@ -230,32 +256,6 @@
             this.btnPerdoruesi.TabIndex = 0;
             this.btnPerdoruesi.Text = "Backup";
             this.btnPerdoruesi.UseVisualStyleBackColor = true;
-            // 
-            // Perdoruesi
-            // 
-            this.Perdoruesi.AutoSize = true;
-            this.Perdoruesi.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Perdoruesi.ForeColor = System.Drawing.Color.White;
-            this.Perdoruesi.Location = new System.Drawing.Point(13, 8);
-            this.Perdoruesi.Name = "Perdoruesi";
-            this.Perdoruesi.Size = new System.Drawing.Size(89, 19);
-            this.Perdoruesi.TabIndex = 1;
-            this.Perdoruesi.Text = "Perdoruesi";
-            // 
-            // dash1
-            // 
-            this.dash1.Location = new System.Drawing.Point(169, 75);
-            this.dash1.Name = "dash1";
-            this.dash1.Size = new System.Drawing.Size(718, 390);
-            this.dash1.TabIndex = 10;
-            // 
-            // historikuControl1
-            // 
-            this.historikuControl1.Location = new System.Drawing.Point(169, 40);
-            this.historikuControl1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.historikuControl1.Name = "historikuControl1";
-            this.historikuControl1.Size = new System.Drawing.Size(722, 435);
-            this.historikuControl1.TabIndex = 9;
             // 
             // opsionetControl11
             // 

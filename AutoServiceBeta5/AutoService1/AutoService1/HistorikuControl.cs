@@ -17,12 +17,13 @@ namespace AutoService1
         public HistorikuControl()
         {
             InitializeComponent();
+            GridFill();
         }
 
 
         private void HistorikuControl_Load(object sender, EventArgs e)
         {
-            GridFill();
+            
         }
         void GridFill()
         {
@@ -34,12 +35,6 @@ namespace AutoService1
                 DataTable dtblCars = new DataTable();
                 sqlDa.Fill(dtblCars);
                 datagrid.DataSource = dtblCars;
-                
-                /*
-                datagrid.Columns[4].Visible = false;
-                datagrid.Columns[5].Visible = false;
-                datagrid.Columns[6].Visible = false;
-                */
 
             }
         }
@@ -95,6 +90,11 @@ namespace AutoService1
             
             
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            GridFill();
         }
     }
 }

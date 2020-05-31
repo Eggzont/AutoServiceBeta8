@@ -169,7 +169,7 @@ namespace AutoService1
 
         private void button6_Click(object sender, EventArgs e)
         {
-            opsionetControl11.Show();
+
         }
 
         private void panel4_Paint(object sender, PaintEventArgs e)
