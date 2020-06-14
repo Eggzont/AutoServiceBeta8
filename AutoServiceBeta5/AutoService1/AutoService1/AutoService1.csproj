@@ -166,6 +166,9 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Report1.rdlc" />
+    <None Include="..\.editorconfig">
+      <Link>.editorconfig</Link>
+    </None>
     <None Include="credentials.json" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

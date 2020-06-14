@@ -57,7 +57,7 @@ namespace AutoService1
 
 
         }
-        
+
 
         private void button3_Click(object sender, EventArgs e)
         {
@@ -144,13 +144,13 @@ namespace AutoService1
             panel3.Visible = false;
         }
 
-       
+
         private void btnPerdoruesi_Click(object sender, EventArgs e)
         {
             opsionetControl11.Show();
         }
 
-      
+
 
         private void button2_MouseEnter(object sender, EventArgs e)
         {
@@ -175,6 +175,20 @@ namespace AutoService1
         private void panel4_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void Form3_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            DialogResult dalja = MessageBox.Show("A Deshironi te dilni ?", "Dalja", MessageBoxButtons.YesNo);
+
+            if (dalja == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+            else if (dalja == DialogResult.No)
+            {
+                e.Cancel = true;
+            }
         }
     }
 }

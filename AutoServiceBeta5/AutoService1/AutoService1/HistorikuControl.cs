@@ -23,7 +23,7 @@ namespace AutoService1
 
         private void HistorikuControl_Load(object sender, EventArgs e)
         {
-            
+
         }
         void GridFill()
         {
@@ -48,15 +48,15 @@ namespace AutoService1
                     MySqlConnection conn = new MySqlConnection(connectionString);
                     conn.Open();
                     MySqlDataAdapter sqlDa = new MySqlDataAdapter("SELECT ServisiID,Klienti,telefoni,vetura,Pershkrimi,Pjeset FROM servisi INNER JOIN cars on servisi.KlientiID = cars.KlientiID WHERE cars.Klienti LIKE'" + txtSearch.Text + "%'", conn);
-                     DataTable dtblCars = new DataTable();
+                    DataTable dtblCars = new DataTable();
                     sqlDa.Fill(dtblCars);
                     datagrid.DataSource = dtblCars;
                     //datagrid.Columns[0].Visible = false;
-                     /*
-                    datagrid.Columns[4].Visible = false;
-                    datagrid.Columns[5].Visible = false;
-                    datagrid.Columns[6].Visible = false;
-                    */
+                    /*
+                   datagrid.Columns[4].Visible = false;
+                   datagrid.Columns[5].Visible = false;
+                   datagrid.Columns[6].Visible = false;
+                   */
                     conn.Close();
                 }
 
@@ -87,8 +87,8 @@ namespace AutoService1
         private void kthehubtn_Click(object sender, EventArgs e)
         {
             shikopanel.Visible = false;
-            
-            
+
+
 
         }
 

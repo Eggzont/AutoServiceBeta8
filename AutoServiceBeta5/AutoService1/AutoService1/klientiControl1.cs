@@ -37,46 +37,58 @@ namespace AutoService1
 
             using (MySqlConnection mysqlCon = new MySqlConnection(connectionString))
             {
-
-                if (KlientiID == 0)
+                if (txtKlienti.Text.Length == 0 || txtMotori.Text.Length == 0 || txtShasia.Text.Length == 0 || txtTelefoni.Text.Length == 0 || txtVetura.Text.Length == 0)
                 {
-                    mysqlCon.Open();
-                    MySqlCommand comm = mysqlCon.CreateCommand();
-                    comm.CommandText = "INSERT INTO cars(Klienti,Telefoni,Vetura,Motori,Shasia)VALUES(@Klienti, @Telefoni, @Vetura, @Motori, @Shasia)";
-
-                    comm.Parameters.AddWithValue("@Klienti", txtKlienti.Text);
-                    comm.Parameters.AddWithValue("@Telefoni", txtTelefoni.Text);
-                    comm.Parameters.AddWithValue("@Vetura", txtVetura.Text);
-                    comm.Parameters.AddWithValue("@Motori", txtMotori.Text);
-                    comm.Parameters.AddWithValue("@Shasia", txtShasia.Text);
-                    comm.ExecuteNonQuery();
-                    MessageBox.Show("U Regjistrua me Sukses");
-                    Clear();
-                    GridFill();
-                    mysqlCon.Close();
-
-
+                    MessageBox.Show("Ju lutem mbushni te gjitha fushat", "Gabim", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 else
                 {
-                    mysqlCon.Open();
-                    MySqlCommand cmd = mysqlCon.CreateCommand();
-                    cmd.CommandType = CommandType.Text;
-                    cmd.CommandText = "UPDATE cars SET Klienti=@Klienti,Telefoni=@Telefoni, Vetura =@Vetura, Motori=@Motori,Shasia=@Shasia WHERE KlientiID=@KlientiID";
+                    try
+                    {
+                        if (KlientiID == 0)
+                        {
+                            mysqlCon.Open();
+                            MySqlCommand comm = mysqlCon.CreateCommand();
+                            comm.CommandText = "INSERT INTO cars(Klienti,Telefoni,Vetura,Motori,Shasia)VALUES(@Klienti, @Telefoni, @Vetura, @Motori, @Shasia)";
 
-                    cmd.Parameters.AddWithValue("@Klienti", txtKlienti.Text);
-                    cmd.Parameters.AddWithValue("@Telefoni", txtTelefoni.Text);
-                    cmd.Parameters.AddWithValue("@Vetura", txtVetura.Text);
-                    cmd.Parameters.AddWithValue("@Motori", txtMotori.Text);
-                    cmd.Parameters.AddWithValue("@Shasia", txtShasia.Text);
-                    cmd.Parameters.AddWithValue("@KlientiID", KlientiID);
-                    cmd.ExecuteNonQuery();
-                    MessageBox.Show("U Ndryshua  me Sukses");
-                    Clear();
-                    GridFill();
-                    mysqlCon.Close();
+                            comm.Parameters.AddWithValue("@Klienti", txtKlienti.Text);
+                            comm.Parameters.AddWithValue("@Telefoni", txtTelefoni.Text);
+                            comm.Parameters.AddWithValue("@Vetura", txtVetura.Text);
+                            comm.Parameters.AddWithValue("@Motori", txtMotori.Text);
+                            comm.Parameters.AddWithValue("@Shasia", txtShasia.Text);
+                            comm.ExecuteNonQuery();
+                            MessageBox.Show("U Regjistrua me Sukses");
+                            Clear();
+                            GridFill();
+                            mysqlCon.Close();
+
+
+                        }
+                        else
+                        {
+                            mysqlCon.Open();
+                            MySqlCommand cmd = mysqlCon.CreateCommand();
+                            cmd.CommandType = CommandType.Text;
+                            cmd.CommandText = "UPDATE cars SET Klienti=@Klienti,Telefoni=@Telefoni, Vetura =@Vetura, Motori=@Motori,Shasia=@Shasia WHERE KlientiID=@KlientiID";
+
+                            cmd.Parameters.AddWithValue("@Klienti", txtKlienti.Text);
+                            cmd.Parameters.AddWithValue("@Telefoni", txtTelefoni.Text);
+                            cmd.Parameters.AddWithValue("@Vetura", txtVetura.Text);
+                            cmd.Parameters.AddWithValue("@Motori", txtMotori.Text);
+                            cmd.Parameters.AddWithValue("@Shasia", txtShasia.Text);
+                            cmd.Parameters.AddWithValue("@KlientiID", KlientiID);
+                            cmd.ExecuteNonQuery();
+                            MessageBox.Show("U Ndryshua  me Sukses");
+                            Clear();
+                            GridFill();
+                            mysqlCon.Close();
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message);
+                    }
                 }
-
             }
         }
 
@@ -101,7 +113,7 @@ namespace AutoService1
                         Clear();
                         GridFill();
                     }
-                    else 
+                    else
                     {
                         MessageBox.Show("Nuk u fshi", "Fshije Tani", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
@@ -109,7 +121,7 @@ namespace AutoService1
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Ndodhi nje gabim , Ky Person permban te dhena tek servisi\n"+ex.Message);
+                MessageBox.Show("Ndodhi nje gabim , Ky Person permban te dhena tek servisi\n" + ex.Message);
 
             }
         }
@@ -128,11 +140,11 @@ namespace AutoService1
         }
         void Clear()
         {
-            txtVetura.Text = txtKlienti.Text =txtShasia.Text = txtSearch.Text = txtTelefoni.Text = txtMotori.Text = "";
+            txtVetura.Text = txtKlienti.Text = txtShasia.Text = txtSearch.Text = txtTelefoni.Text = txtMotori.Text = "";
             KlientiID = 0;
             SaveBtn.Text = "Ruaj";
             DeleteBtn.Enabled = false;
-            
+
         }
 
         private void button3_Click(object sender, EventArgs e)

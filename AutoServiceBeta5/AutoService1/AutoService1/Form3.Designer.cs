@@ -211,7 +211,7 @@
             // historikuControl1
             // 
             this.historikuControl1.Location = new System.Drawing.Point(169, 40);
-            this.historikuControl1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.historikuControl1.Margin = new System.Windows.Forms.Padding(2);
             this.historikuControl1.Name = "historikuControl1";
             this.historikuControl1.Size = new System.Drawing.Size(722, 435);
             this.historikuControl1.TabIndex = 9;
@@ -296,6 +296,7 @@
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Auto Service Dashboard";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form3_FormClosing);
             this.Load += new System.EventHandler(this.Form3_Load);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
